@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lai me de lai con</title>
+</head>
+<body>
+<script>
+    function interestRate(total,month,rate) {
+        for (let i = 1; i < month ; i++) {
+            total += total*rate;
+        }
+        document.write(total);
+    }
+    let total = parseFloat(prompt('Nhập số tiền gốc: '));
+    let month = parseFloat(prompt('Nhập số tháng cần gửi: '));
+    let rate  = parseFloat(prompt('Lãi suất hàng tháng là: '));
+    interestRate(total,month,rate);
+</script>
+</body>
+</html>
