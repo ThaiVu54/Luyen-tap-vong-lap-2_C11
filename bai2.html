@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>giai thừa của 1 số nguyên dương</title>
+</head>
+<body>
+<script>
+    let inte = prompt("nhap vao so nguyen");
+    inte = parseInt(inte);
+    let giaiThua = 1
+    if(inte < 0){
+        alert("nhập sai. nhập số lơn hơn 0")
+    }else
+        for(let i = 1; i <= inte; i++){
+            giaiThua *= i;
+        }
+        alert(inte+ "! = " + giaiThua)
+
+</script>
+</body>
+</html>
